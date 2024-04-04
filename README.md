@@ -103,27 +103,27 @@ func startAssessmentWasPressed(){
 **startWorkout** starts a custom workout.
 ```
 // List of exercises
-let exercise:[SMExercise] = [
+let exercises:[SMExercise] = [
     SMExercise(
-        name: "The name of the exercise",
-        exerciseIntro: "(optinal) a path to intro sound",
-        totalSeconds: 30, // exercise time
-        introSeconds: 10, // (optinal) time before the start of the exercise when the big video instruction will be shown
-        videoInstruction: "(optinal) a path to a video instruction",
-        uiElements: [.gaugeOfMotion,.timer,.repsCounter], // the UI elements you will like to be shown
-        detector: "The exercise you will like",
+        name: "", // display name of the exercise
+        exerciseIntro: "", // (optinal) a path to intro audio file
+        totalSeconds: 30, // exercise time (seconds)
+        introSeconds: 10, // (optinal) total display time (seconds) of the instruction video before the exercise starts
+        videoInstruction: "", // (optinal) a path to instruction video file
+        uiElements: [.gaugeOfMotion, .timer, .repsCounter], // the UI elements to show
+        detector: "", // SMExerciseType
         repBased: true, // is the exerise repetition based
-        exerciseClosure: "(optinal) a path to outro sound"
+        exerciseClosure: "" // (optinal) a path to outro audio file
     )
 ]
 
 let workout = SMWorkout(
-    id: "The workout id",
-    name: "The workout name",
-    workoutIntro: "(optinal) a path to intro sound",
-    soundtrack: "(optinal) a path to a soundtrack",
-    exercises: exercise, // The exercises we add Before
-    workoutClosure: "(optinal) a path to outro sound"
+    id: "", // workout id
+    name: "", // workout name
+    workoutIntro: "", // (optinal) a path to intro audio file
+    soundtrack: "", // (optinal) a path to a soundtrack audio file
+    exercises: exercises, // sequence of exercises
+    workoutClosure: "", // (optinal) a path to outro audio file
 )
 
 do{
