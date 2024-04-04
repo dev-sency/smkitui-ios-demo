@@ -86,8 +86,8 @@ extension ViewController:SMKitUIWorkoutDelegate{
 }
 ```
     
-### Start Assessmet
-**startAssessmet** starts one of Sency's blueprint assessments.
+### Start Assessment
+**startAssessment** starts one of Sency's blueprint assessments.
 ```Swift
 func startAssessmentWasPressed(){
     do{
