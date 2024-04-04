@@ -86,7 +86,7 @@ extension ViewController:SMKitUIWorkoutDelegate{
 }
 ```
     
-- Assessmet:  
+### Start Assessmet
 **startAssessmet** starts one of Sency's blueprint assessments.
 ```
 func startAssessmentWasPressed(){
@@ -99,7 +99,7 @@ func startAssessmentWasPressed(){
 }
 ```
 
-- Custom Workout:
+### Start Custom Workout
 **startWorkout** starts a custom workout.
 ```
 // List of exercises
