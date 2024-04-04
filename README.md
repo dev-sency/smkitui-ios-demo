@@ -40,7 +40,7 @@ Comming soon
 <a name="setup"></a>
 ## 2. Setup
 Add camera permission request to `Info.plist`
-```
+```Xml
 <key>NSCameraUsageDescription</key>
 <string>Camera access is needed</string>
 ```
@@ -48,7 +48,7 @@ Add camera permission request to `Info.plist`
 
 <a name="conf"></a>
 ## 3. Configure
-```
+```Swift
 SMKitUIModel.configure(authKey: "YOUR_KEY") {
     // The configuration was successful
     // Your Code
@@ -65,7 +65,7 @@ To reduce wait time we recommend to call `configure` on app launch.
 <a name="start"></a>
 ## 4. Start
 Implement **SMKitUIWorkoutDelegate**.
-```
+```Swift
 extension ViewController:SMKitUIWorkoutDelegate{
     // Runtime error callback
     func handleWorkoutErrors(error: Error) {
@@ -88,7 +88,7 @@ extension ViewController:SMKitUIWorkoutDelegate{
     
 ### Start Assessmet
 **startAssessmet** starts one of Sency's blueprint assessments.
-```
+```Swift
 func startAssessmentWasPressed(){
     do{
         // Start assessment
@@ -101,7 +101,7 @@ func startAssessmentWasPressed(){
 
 ### Start Custom Workout
 **startWorkout** starts a custom workout.
-```
+```Swift
 // List of exercises
 let exercises:[SMExercise] = [
     SMExercise(
