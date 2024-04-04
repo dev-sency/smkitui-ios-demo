@@ -1,5 +1,11 @@
 # SMKitUI iOS Demo
-----------------
+
+1. [ Installation. ](#inst)
+2. [ Setup. ](#setup)
+3. [ Configure. ](#conf)
+4. [ Start. ](#start)
+
+<a name="inst"></a>
 ## 1. Installation
 
 ### Cocoapods
@@ -31,14 +37,15 @@ end
 
 Comming soon
 
+<a name="setup"></a>
 ## 2. Setup
-
 Add camera permission request to `Info.plist`
 ```
 <key>NSCameraUsageDescription</key>
 <string>Camera access is needed</string>
 ```
 
+<a name="conf"></a>
 ## 3. Configure
 ```
 SMKitUIModel.configure(authKey: "YOUR_KEY") {
@@ -52,7 +59,8 @@ SMKitUIModel.configure(authKey: "YOUR_KEY") {
 To reduce wait time we recommend to call `configure` on app launch.
 
 **⚠️ SMKitUI will not work if you don't first call configure.**
- 
+
+<a name="start"></a>
 ## 4. Start
 Implement **SMKitUIWorkoutDelegate**.
 ```
